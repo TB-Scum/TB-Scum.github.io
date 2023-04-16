@@ -1,2 +1,82 @@
-hello world
-jjfj
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.icon">
+    <title>ScumTB' Website</title>
+    <link rel="stylesheet" href="./index.css" />
+
+</head>
+<body>
+
+    <div id="main">
+        <div style="height:120px; position:absolute;left:92%;top:8%;">
+        
+         <audio id="music2" src="./images/1.mp3"  loop="loop" >你的浏览器不支持audio标签。</audio>
+         <a href="javascript:playPause();"><img src="./images/start.svg" width="48" height="50" id="music_btn2" ></a>
+        </div>
+     </div>
+     <script>
+     function playPause() {
+         var music = document.getElementById('music2');
+         var music_btn = document.getElementById('music_btn2');
+         if (music.paused){
+             music.play();
+             music_btn.src = "./images/music.svg"
+         }
+         else{
+             music.pause();
+             music_btn.src = './images/start.svg'; 
+         }
+     }
+     </script>
+
+     <main>
+	   <header>
+          <img src="./images/a.jpeg" />
+          <h1>@ScumTB</h1>
+        </header>
+      <ul>
+          <li>
+            <a href="https://blog.scumtb.cn/">
+              <img src="./images/房屋.svg" alt="Homepage" width="20" />
+              Official Website
+            </a>
+          </li>
+
+	<li>
+            <a href="https://file.scumtb.cn/">
+              <img src="./images/yun.svg" alt="Alist" width="20" />
+             Netdisk
+            </a>
+          </li>
+
+          <li>
+  
+            <a href="https://steamcommunity.com/id/ScumTB">
+              <img src="./images/steam.svg" alt="Homepage" width="20" />
+              steam
+            </a>
+          </li>
+          <li>
+            <a href="https://space.bilibili.com/639433048">
+              <img src="./images/bilibili.svg" alt="Homepage" width="20" />
+              Bilibili
+            </a>
+          </li>
+
+          <li>
+            <a href="https://twitter.com/Scum33299664">
+              <img src="./images/twitter.svg" alt="Twitter" width="20" />
+              Twitter
+            </a>
+          </li>
+	  
+        
+        </ul>
+</main>
+
+    
+</body>
+</html>
