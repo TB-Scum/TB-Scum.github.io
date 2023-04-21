@@ -1,3 +1,4 @@
 # webpage
+* deploy my homepage with github pages,frame fork by devaslife
+* KISS
 
-try to make home page with simple css html and js
